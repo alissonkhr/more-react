@@ -1,5 +1,14 @@
 function ListGroup() {
-  const items = ["Las Vegas", "Narnia", "The Shire", "Hyrule"];
+  let items = ["Las Vegas", "Narnia", "The Shire", "Hyrule"];
+  items = [];
+
+  if (items.length === 0)
+    return (
+      <>
+        <h1>List</h1>
+        <p>No item found</p>
+      </>
+    );
 
   return (
     <>
