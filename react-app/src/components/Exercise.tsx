@@ -1,6 +1,10 @@
 import React from "react";
 
-const Exercise = () => {
+interface Props {
+  children: string;
+}
+
+const Exercise = ({ children }: Props) => {
   return (
     <div>
       <button
@@ -10,7 +14,7 @@ const Exercise = () => {
           console.log("clicked");
         }}
       >
-        Button
+        {children}
       </button>
     </div>
   );
