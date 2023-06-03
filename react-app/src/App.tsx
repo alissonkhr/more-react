@@ -8,6 +8,7 @@ function App() {
         Hello <span>World</span>
       </Alert>
       <Exercise>Click me!</Exercise>
+      <Exercise>Click here too</Exercise>
     </div>
   );
 }
