@@ -1,7 +1,13 @@
 import Alert from "./components/Alert";
 import Exercise from "./components/Exercise";
+import ListGroup from "./components/ListGroup";
 
 function App() {
+  let items = ["Narnia", "Las Vegas", "Land of Ooo"];
+  const handleSelectItem = (item: string) => {
+    console.log(item);
+  };
+
   return (
     <div className="alert alert-primary">
       <Alert>
@@ -9,6 +15,11 @@ function App() {
       </Alert>
       <Exercise>Click me!</Exercise>
       <Exercise>Click here too</Exercise>
+      <ListGroup
+        items={items}
+        heading="Places"
+        onSelectItem={handleSelectItem}
+      />
     </div>
   );
 }
