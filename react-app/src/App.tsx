@@ -13,8 +13,8 @@ function App() {
       <Alert>
         Hello <span>World</span>
       </Alert>
-      <Exercise>Click me!</Exercise>
-      <Exercise>Click here too</Exercise>
+      <Exercise color="secondary">Click me!</Exercise>
+      <Exercise color="primary">Click here too</Exercise>
       <ListGroup
         items={items}
         heading="Places"

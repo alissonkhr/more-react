@@ -2,14 +2,15 @@ import React from "react";
 
 interface Props {
   children: string;
+  color: string;
 }
 
-const Exercise = ({ children }: Props) => {
+const Exercise = ({ children, color }: Props) => {
   return (
     <div>
       <button
         type="button"
-        className="btn btn-primary"
+        className={'btn btn-' + color}
         onClick={() => {
           console.log("clicked");
         }}
