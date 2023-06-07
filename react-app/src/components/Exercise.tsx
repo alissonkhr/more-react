@@ -3,17 +3,16 @@ import React from "react";
 interface Props {
   children: string;
   color: string;
+  onClick: () => void;
 }
 
-const Exercise = ({ children, color }: Props) => {
+const Exercise = ({ children, color, onClick }: Props) => {
   return (
     <div>
       <button
         type="button"
         className={'btn btn-' + color}
-        onClick={() => {
-          console.log("clicked");
-        }}
+        onClick={onClick}
       >
         {children}
       </button>

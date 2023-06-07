@@ -13,8 +13,22 @@ function App() {
       <Alert>
         Hello <span>World</span>
       </Alert>
-      <Exercise color="secondary">Click me!</Exercise>
-      <Exercise color="primary">Click here too</Exercise>
+      <Exercise
+        color="secondary"
+        onClick={() => {
+          console.log("first button");
+        }}
+      >
+        Click me!
+      </Exercise>
+      <Exercise
+        color="primary"
+        onClick={() => {
+          console.log("second button");
+        }}
+      >
+        Click here too
+      </Exercise>
       <ListGroup
         items={items}
         heading="Places"
