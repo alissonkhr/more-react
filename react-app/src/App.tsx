@@ -14,7 +14,7 @@ function App() {
         Hello <span>World</span>
       </Alert>
       <Exercise
-        color="secondary"
+        color="danger"
         onClick={() => {
           console.log("first button");
         }}
@@ -22,7 +22,7 @@ function App() {
         Click me!
       </Exercise>
       <Exercise
-        color="primary"
+        color="secondary"
         onClick={() => {
           console.log("second button");
         }}
